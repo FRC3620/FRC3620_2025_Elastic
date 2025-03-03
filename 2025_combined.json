@@ -41,74 +41,22 @@
       "width": 256.0,
       "x": 0.0,
       "y": 128.0
-     }
-    ],
-    "layouts": [
+     },
      {
-      "children": [
-       {
-        "height": 128.0,
-        "properties": {
-         "data_type": "boolean",
-         "false_color": 4278190080,
-         "false_icon": "None",
-         "period": 0.06,
-         "topic": "/SmartDashboard/frc3620/health/indicator/red",
-         "true_color": 4294901760,
-         "true_icon": "None"
-        },
-        "title": "red",
-        "type": "Boolean Box",
-        "width": 128.0,
-        "x": 0.0,
-        "y": 0.0
-       },
-       {
-        "height": 128.0,
-        "properties": {
-         "data_type": "boolean",
-         "false_color": 4278190080,
-         "false_icon": "None",
-         "period": 0.06,
-         "topic": "/SmartDashboard/frc3620/health/indicator/orange",
-         "true_color": 4294966528,
-         "true_icon": "None"
-        },
-        "title": "orange",
-        "type": "Boolean Box",
-        "width": 128.0,
-        "x": 0.0,
-        "y": 0.0
-       },
-       {
-        "height": 128.0,
-        "properties": {
-         "data_type": "boolean",
-         "false_color": 4278190080,
-         "false_icon": "None",
-         "period": 0.06,
-         "topic": "/SmartDashboard/frc3620/health/indicator/green",
-         "true_color": 4283215696,
-         "true_icon": "None"
-        },
-        "title": "green",
-        "type": "Boolean Box",
-        "width": 128.0,
-        "x": 0.0,
-        "y": 0.0
-       }
-      ],
-      "height": 384.0,
+      "height": 128.0,
       "properties": {
-       "label_position": "HIDDEN"
+       "data_type": "string",
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/health/indicator/colored"
       },
-      "title": "indicator",
-      "type": "List Layout",
+      "title": "Health",
+      "type": "Single Color View",
       "width": 128.0,
       "x": 640.0,
       "y": 0.0
      }
-    ]
+    ],
+    "layouts": []
    },
    "name": "Drive"
   },

@@ -3,74 +3,16 @@
   "grid_size": 128,
   "tabs": [
     {
+      "name": "(driveteam_layout.json)",
+      "grid_layout": {
+        "layouts": [],
+        "containers": []
+      }
+    },
+    {
       "name": "Drive",
       "grid_layout": {
-        "layouts": [
-          {
-            "title": "indicator",
-            "x": 640.0,
-            "y": 0.0,
-            "width": 128.0,
-            "height": 384.0,
-            "type": "List Layout",
-            "properties": {
-              "label_position": "HIDDEN"
-            },
-            "children": [
-              {
-                "title": "red",
-                "x": 0.0,
-                "y": 0.0,
-                "width": 128.0,
-                "height": 128.0,
-                "type": "Boolean Box",
-                "properties": {
-                  "topic": "/SmartDashboard/frc3620/health/indicator/red",
-                  "period": 0.06,
-                  "data_type": "boolean",
-                  "true_color": 4294901760,
-                  "false_color": 4278190080,
-                  "true_icon": "None",
-                  "false_icon": "None"
-                }
-              },
-              {
-                "title": "orange",
-                "x": 0.0,
-                "y": 0.0,
-                "width": 128.0,
-                "height": 128.0,
-                "type": "Boolean Box",
-                "properties": {
-                  "topic": "/SmartDashboard/frc3620/health/indicator/orange",
-                  "period": 0.06,
-                  "data_type": "boolean",
-                  "true_color": 4294966528,
-                  "false_color": 4278190080,
-                  "true_icon": "None",
-                  "false_icon": "None"
-                }
-              },
-              {
-                "title": "green",
-                "x": 0.0,
-                "y": 0.0,
-                "width": 128.0,
-                "height": 128.0,
-                "type": "Boolean Box",
-                "properties": {
-                  "topic": "/SmartDashboard/frc3620/health/indicator/green",
-                  "period": 0.06,
-                  "data_type": "boolean",
-                  "true_color": 4283215696,
-                  "false_color": 4278190080,
-                  "true_icon": "None",
-                  "false_icon": "None"
-                }
-              }
-            ]
-          }
-        ],
+        "layouts": [],
         "containers": [
           {
             "title": "Hardware Alert",
@@ -108,6 +50,19 @@
               "topic": "/SmartDashboard/navX",
               "period": 0.06,
               "counter_clockwise_positive": false
+            }
+          },
+          {
+            "title": "Health",
+            "x": 640.0,
+            "y": 0.0,
+            "width": 128.0,
+            "height": 128.0,
+            "type": "Single Color View",
+            "properties": {
+              "topic": "/SmartDashboard/frc3620/health/indicator/colored",
+              "period": 0.06,
+              "data_type": "string"
             }
           }
         ]
