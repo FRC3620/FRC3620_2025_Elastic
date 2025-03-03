@@ -1,0 +1,660 @@
+{
+ "grid_size": 128,
+ "tabs": [
+  {
+   "grid_layout": {
+    "containers": [
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "boolean",
+       "false_color": 4294198070,
+       "false_icon": "None",
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/EndEffector/hasCoral",
+       "true_color": 4283215696,
+       "true_icon": "None"
+      },
+      "title": "hasCoral",
+      "type": "Boolean Box",
+      "width": 256.0,
+      "x": 256.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/Bump Shoulder + 2.5"
+      },
+      "title": "Bump Shoulder + 2.5",
+      "type": "Command",
+      "width": 256.0,
+      "x": 768.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/Bump Shoulder - 2.5"
+      },
+      "title": "Bump Shoulder - 2.5",
+      "type": "Command",
+      "width": 256.0,
+      "x": 768.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/Bump Elevator + 1"
+      },
+      "title": "Bump Elevator + 1",
+      "type": "Command",
+      "width": 256.0,
+      "x": 1024.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/Bump Elevator - 1"
+      },
+      "title": "Bump Elevator - 1",
+      "type": "Command",
+      "width": 256.0,
+      "x": 1024.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "boolean",
+       "false_color": 4294198070,
+       "false_icon": "None",
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/Elevator/HomeLimitSwitchPressed",
+       "true_color": 4283215696,
+       "true_icon": "None"
+      },
+      "title": "HomeLimitSwitchPressed",
+      "type": "Boolean Box",
+      "width": 256.0,
+      "x": 0.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/Elevator/Height"
+      },
+      "title": "Height",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 0.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/Shoulder/ActualPositionDegrees"
+      },
+      "title": "ActualPositionDegrees",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 256.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/Shoulder/RequestedPosition"
+      },
+      "title": "RequestedPosition",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 256.0,
+      "y": 256.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/ESEF/debug/targetHeight"
+      },
+      "title": "targetHeight",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 0.0,
+      "y": 256.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/ESEF 0 height, 90 shoulder"
+      },
+      "title": "ESEF 0 height, 90 shoulder",
+      "type": "Command",
+      "width": 256.0,
+      "x": 512.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/ESEF 21 height, 120 shoulder"
+      },
+      "title": "ESEF 21 height, 120 shoulder",
+      "type": "Command",
+      "width": 256.0,
+      "x": 512.0,
+      "y": 0.0
+     }
+    ],
+    "layouts": []
+   },
+   "name": "ESEF"
+  },
+  {
+   "grid_layout": {
+    "containers": [
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/AFI/PivotRearAbsolutePosition"
+      },
+      "title": "PivotRearAbsolutePosition",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 512.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/AFI/PivotFrontAbsolutePosition"
+      },
+      "title": "PivotFrontAbsolutePosition",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 640.0,
+      "y": 128.0
+     }
+    ],
+    "layouts": []
+   },
+   "name": "AFI (Intake)"
+  },
+  {
+   "grid_layout": {
+    "containers": [
+     {
+      "height": 384.0,
+      "properties": {
+       "period": 0.06,
+       "rotation_turns": 0,
+       "topic": "/CameraPublisher/limelight-back"
+      },
+      "title": "limelight-back",
+      "type": "Camera Stream",
+      "width": 768.0,
+      "x": 0.0,
+      "y": 256.0
+     },
+     {
+      "height": 384.0,
+      "properties": {
+       "period": 0.06,
+       "rotation_turns": 0,
+       "topic": "/CameraPublisher/limelight-front"
+      },
+      "title": "limelight-front",
+      "type": "Camera Stream",
+      "width": 768.0,
+      "x": 768.0,
+      "y": 256.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/limelight-back/hb"
+      },
+      "title": "hb",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 256.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/limelight-back/tid"
+      },
+      "title": "tid",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 256.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/limelight-front/hb"
+      },
+      "title": "hb",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 1152.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/limelight-front/tid"
+      },
+      "title": "tid",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 1152.0,
+      "y": 0.0
+     }
+    ],
+    "layouts": []
+   },
+   "name": "Vision"
+  },
+  {
+   "grid_layout": {
+    "containers": [
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/SwerveDriveDiagnosticCommand"
+      },
+      "title": "SwerveDriveDiagnosticCommand",
+      "type": "Command",
+      "width": 384.0,
+      "x": 0.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "string",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/SwerveDriveDiagnosticCommand/result"
+      },
+      "title": "result",
+      "type": "Text Display",
+      "width": 1088.0,
+      "x": 384.0,
+      "y": 0.0
+     }
+    ],
+    "layouts": [
+     {
+      "children": [
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontleft/azimuth/current"
+        },
+        "title": "frontleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 704.0,
+        "y": 384.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontright/azimuth/current"
+        },
+        "title": "frontright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 640.0,
+        "y": 448.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backleft/azimuth/current"
+        },
+        "title": "backleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 640.0,
+        "y": 192.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backright/azimuth/current"
+        },
+        "title": "backright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 704.0,
+        "y": 512.0
+       }
+      ],
+      "height": 320.0,
+      "properties": {
+       "label_position": "TOP"
+      },
+      "title": "Azimuth Motor Current",
+      "type": "List Layout",
+      "width": 256.0,
+      "x": 512.0,
+      "y": 128.0
+     },
+     {
+      "children": [
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontleft/azimuth/speed"
+        },
+        "title": "frontleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 896.0,
+        "y": 384.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontright/azimuth/speed"
+        },
+        "title": "frontright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 896.0,
+        "y": 384.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backleft/azimuth/speed"
+        },
+        "title": "backleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 896.0,
+        "y": 448.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backright/azimuth/speed"
+        },
+        "title": "backright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 960.0,
+        "y": 512.0
+       }
+      ],
+      "height": 320.0,
+      "properties": {
+       "label_position": "TOP"
+      },
+      "title": "Azimuth Motor Speed",
+      "type": "List Layout",
+      "width": 256.0,
+      "x": 768.0,
+      "y": 128.0
+     },
+     {
+      "children": [
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontleft/drive/speed"
+        },
+        "title": "frontleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 704.0,
+        "y": 320.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontright/drive/speed"
+        },
+        "title": "frontright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 640.0,
+        "y": 448.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backleft/drive/speed"
+        },
+        "title": "backleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 640.0,
+        "y": 512.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backright/drive/speed"
+        },
+        "title": "backright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 704.0,
+        "y": 512.0
+       }
+      ],
+      "height": 320.0,
+      "properties": {
+       "label_position": "TOP"
+      },
+      "title": "Drive Motor Speed",
+      "type": "List Layout",
+      "width": 256.0,
+      "x": 256.0,
+      "y": 128.0
+     },
+     {
+      "children": [
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontleft/drive/current"
+        },
+        "title": "frontleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 384.0,
+        "y": 384.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/frontright/drive/current"
+        },
+        "title": "frontright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 320.0,
+        "y": 448.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backleft/drive/current"
+        },
+        "title": "backleft",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 384.0,
+        "y": 512.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "double",
+         "period": 0.06,
+         "show_submit_button": false,
+         "topic": "/SmartDashboard/frc3620/diagnostics/backright/drive/current"
+        },
+        "title": "backright",
+        "type": "Text Display",
+        "width": 128.0,
+        "x": 384.0,
+        "y": 576.0
+       }
+      ],
+      "height": 320.0,
+      "properties": {
+       "label_position": "TOP"
+      },
+      "title": "Drive Motor Current",
+      "type": "List Layout",
+      "width": 256.0,
+      "x": 0.0,
+      "y": 128.0
+     }
+    ]
+   },
+   "name": "Swerve Diagnostics"
+  },
+  {
+   "grid_layout": {
+    "containers": [
+     {
+      "height": 640.0,
+      "properties": {
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/Hardware Alert"
+      },
+      "title": "Hardware Alert",
+      "type": "Alerts",
+      "width": 1472.0,
+      "x": 0.0,
+      "y": 0.0
+     }
+    ],
+    "layouts": []
+   },
+   "name": "Health"
+  },
+  {
+   "grid_layout": {
+    "containers": [
+     {
+      "height": 640.0,
+      "properties": {
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/Hardware Alert"
+      },
+      "title": "Hardware Alert",
+      "type": "Alerts",
+      "width": 832.0,
+      "x": 640.0,
+      "y": 0.0
+     }
+    ],
+    "layouts": []
+   },
+   "name": "Checklist"
+  }
+ ],
+ "version": 1.0
+}
