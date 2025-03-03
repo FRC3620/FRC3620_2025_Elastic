@@ -5,6 +5,117 @@
    "grid_layout": {
     "containers": [
      {
+      "height": 384.0,
+      "properties": {
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/Hardware Alert"
+      },
+      "title": "Hardware Alert",
+      "type": "Alerts",
+      "width": 640.0,
+      "x": 768.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "sort_options": false,
+       "topic": "/SmartDashboard/Auto mode"
+      },
+      "title": "Auto mode",
+      "type": "ComboBox Chooser",
+      "width": 640.0,
+      "x": 0.0,
+      "y": 0.0
+     },
+     {
+      "height": 256.0,
+      "properties": {
+       "counter_clockwise_positive": false,
+       "period": 0.06,
+       "topic": "/SmartDashboard/navX"
+      },
+      "title": "navX",
+      "type": "Gyro",
+      "width": 256.0,
+      "x": 0.0,
+      "y": 128.0
+     }
+    ],
+    "layouts": [
+     {
+      "children": [
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "boolean",
+         "false_color": 4278190080,
+         "false_icon": "None",
+         "period": 0.06,
+         "topic": "/SmartDashboard/frc3620/health/indicator/red",
+         "true_color": 4294901760,
+         "true_icon": "None"
+        },
+        "title": "red",
+        "type": "Boolean Box",
+        "width": 128.0,
+        "x": 0.0,
+        "y": 0.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "boolean",
+         "false_color": 4278190080,
+         "false_icon": "None",
+         "period": 0.06,
+         "topic": "/SmartDashboard/frc3620/health/indicator/orange",
+         "true_color": 4294966528,
+         "true_icon": "None"
+        },
+        "title": "orange",
+        "type": "Boolean Box",
+        "width": 128.0,
+        "x": 0.0,
+        "y": 0.0
+       },
+       {
+        "height": 128.0,
+        "properties": {
+         "data_type": "boolean",
+         "false_color": 4278190080,
+         "false_icon": "None",
+         "period": 0.06,
+         "topic": "/SmartDashboard/frc3620/health/indicator/green",
+         "true_color": 4283215696,
+         "true_icon": "None"
+        },
+        "title": "green",
+        "type": "Boolean Box",
+        "width": 128.0,
+        "x": 0.0,
+        "y": 0.0
+       }
+      ],
+      "height": 384.0,
+      "properties": {
+       "label_position": "HIDDEN"
+      },
+      "title": "indicator",
+      "type": "List Layout",
+      "width": 128.0,
+      "x": 640.0,
+      "y": 0.0
+     }
+    ]
+   },
+   "name": "Drive"
+  },
+  {
+   "grid_layout": {
+    "containers": [
+     {
       "height": 128.0,
       "properties": {
        "data_type": "boolean",
@@ -217,6 +328,42 @@
    "grid_layout": {
     "containers": [
      {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/climber/absolutePosition"
+      },
+      "title": "absolutePosition",
+      "type": "Text Display",
+      "width": 192.0,
+      "x": 640.0,
+      "y": 64.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/climber/motorOutput"
+      },
+      "title": "motorOutput",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 896.0,
+      "y": 64.0
+     }
+    ],
+    "layouts": []
+   },
+   "name": "Climber"
+  },
+  {
+   "grid_layout": {
+    "containers": [
+     {
       "height": 384.0,
       "properties": {
        "period": 0.06,
@@ -225,8 +372,8 @@
       },
       "title": "limelight-back",
       "type": "Camera Stream",
-      "width": 768.0,
-      "x": 0.0,
+      "width": 640.0,
+      "x": 768.0,
       "y": 256.0
      },
      {
@@ -239,7 +386,7 @@
       "title": "limelight-front",
       "type": "Camera Stream",
       "width": 768.0,
-      "x": 768.0,
+      "x": 0.0,
       "y": 256.0
      },
      {
@@ -253,7 +400,7 @@
       "title": "hb",
       "type": "Text Display",
       "width": 128.0,
-      "x": 256.0,
+      "x": 1024.0,
       "y": 128.0
      },
      {
@@ -267,7 +414,7 @@
       "title": "tid",
       "type": "Text Display",
       "width": 128.0,
-      "x": 256.0,
+      "x": 1024.0,
       "y": 0.0
      },
      {
@@ -281,7 +428,7 @@
       "title": "hb",
       "type": "Text Display",
       "width": 128.0,
-      "x": 1152.0,
+      "x": 256.0,
       "y": 128.0
      },
      {
@@ -295,7 +442,7 @@
       "title": "tid",
       "type": "Text Display",
       "width": 128.0,
-      "x": 1152.0,
+      "x": 256.0,
       "y": 0.0
      }
     ],
@@ -634,26 +781,6 @@
     "layouts": []
    },
    "name": "Health"
-  },
-  {
-   "grid_layout": {
-    "containers": [
-     {
-      "height": 640.0,
-      "properties": {
-       "period": 0.06,
-       "topic": "/SmartDashboard/frc3620/Hardware Alert"
-      },
-      "title": "Hardware Alert",
-      "type": "Alerts",
-      "width": 832.0,
-      "x": 640.0,
-      "y": 0.0
-     }
-    ],
-    "layouts": []
-   },
-   "name": "Checklist"
   }
  ],
  "version": 1.0

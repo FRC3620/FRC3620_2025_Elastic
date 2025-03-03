@@ -1,6 +1,8 @@
+driveteam-layout/Drive
 esef-layout/ESEF
 esef-layout/AFI (Intake)
+health-layout/Climber
 vision-layout/Vision
 health-layout/Swerve Diagnostics
 health-layout/Health
-health-layout/Checklist
+# health-layout/Checklist

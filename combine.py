@@ -10,7 +10,10 @@ def main():
     with open('wanted.txt', 'r') as f:
         for line in f:
             line = line.strip()
-            print(f)
+            
+            if line.startswith('#'):
+                continue
+
             file, tabname = line.split("/")
             filename = file + ".json"
 

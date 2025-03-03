@@ -1,0 +1,117 @@
+{
+  "version": 1.0,
+  "grid_size": 128,
+  "tabs": [
+    {
+      "name": "Drive",
+      "grid_layout": {
+        "layouts": [
+          {
+            "title": "indicator",
+            "x": 640.0,
+            "y": 0.0,
+            "width": 128.0,
+            "height": 384.0,
+            "type": "List Layout",
+            "properties": {
+              "label_position": "HIDDEN"
+            },
+            "children": [
+              {
+                "title": "red",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Boolean Box",
+                "properties": {
+                  "topic": "/SmartDashboard/frc3620/health/indicator/red",
+                  "period": 0.06,
+                  "data_type": "boolean",
+                  "true_color": 4294901760,
+                  "false_color": 4278190080,
+                  "true_icon": "None",
+                  "false_icon": "None"
+                }
+              },
+              {
+                "title": "orange",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Boolean Box",
+                "properties": {
+                  "topic": "/SmartDashboard/frc3620/health/indicator/orange",
+                  "period": 0.06,
+                  "data_type": "boolean",
+                  "true_color": 4294966528,
+                  "false_color": 4278190080,
+                  "true_icon": "None",
+                  "false_icon": "None"
+                }
+              },
+              {
+                "title": "green",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Boolean Box",
+                "properties": {
+                  "topic": "/SmartDashboard/frc3620/health/indicator/green",
+                  "period": 0.06,
+                  "data_type": "boolean",
+                  "true_color": 4283215696,
+                  "false_color": 4278190080,
+                  "true_icon": "None",
+                  "false_icon": "None"
+                }
+              }
+            ]
+          }
+        ],
+        "containers": [
+          {
+            "title": "Hardware Alert",
+            "x": 768.0,
+            "y": 0.0,
+            "width": 640.0,
+            "height": 384.0,
+            "type": "Alerts",
+            "properties": {
+              "topic": "/SmartDashboard/frc3620/Hardware Alert",
+              "period": 0.06
+            }
+          },
+          {
+            "title": "Auto mode",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 640.0,
+            "height": 128.0,
+            "type": "ComboBox Chooser",
+            "properties": {
+              "topic": "/SmartDashboard/Auto mode",
+              "period": 0.06,
+              "sort_options": false
+            }
+          },
+          {
+            "title": "navX",
+            "x": 0.0,
+            "y": 128.0,
+            "width": 256.0,
+            "height": 256.0,
+            "type": "Gyro",
+            "properties": {
+              "topic": "/SmartDashboard/navX",
+              "period": 0.06,
+              "counter_clockwise_positive": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
