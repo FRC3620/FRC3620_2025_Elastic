@@ -5,7 +5,7 @@
    "grid_layout": {
     "containers": [
      {
-      "height": 384.0,
+      "height": 256.0,
       "properties": {
        "period": 0.06,
        "topic": "/SmartDashboard/frc3620/Hardware Alert"
@@ -54,6 +54,57 @@
       "width": 128.0,
       "x": 640.0,
       "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "show_type": true,
+       "topic": "/SmartDashboard/Kill running swerve command"
+      },
+      "title": "Kill running swerve command",
+      "type": "Command",
+      "width": 384.0,
+      "x": 256.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/swerveSubsystem"
+      },
+      "title": "swerveSubsystem",
+      "type": "Subsystem",
+      "width": 384.0,
+      "x": 256.0,
+      "y": 256.0
+     },
+     {
+      "height": 256.0,
+      "properties": {
+       "period": 0.06,
+       "rotation_turns": 0,
+       "topic": "/CameraPublisher/limelight-back"
+      },
+      "title": "limelight-back",
+      "type": "Camera Stream",
+      "width": 256.0,
+      "x": 1024.0,
+      "y": 256.0
+     },
+     {
+      "height": 256.0,
+      "properties": {
+       "period": 0.06,
+       "rotation_turns": 0,
+       "topic": "/CameraPublisher/limelight-front"
+      },
+      "title": "limelight-front",
+      "type": "Camera Stream",
+      "width": 256.0,
+      "x": 768.0,
+      "y": 256.0
      }
     ],
     "layouts": []
@@ -63,23 +114,6 @@
   {
    "grid_layout": {
     "containers": [
-     {
-      "height": 128.0,
-      "properties": {
-       "data_type": "boolean",
-       "false_color": 4294198070,
-       "false_icon": "None",
-       "period": 0.06,
-       "topic": "/SmartDashboard/frc3620/EndEffector/hasCoral",
-       "true_color": 4283215696,
-       "true_icon": "None"
-      },
-      "title": "hasCoral",
-      "type": "Boolean Box",
-      "width": 256.0,
-      "x": 256.0,
-      "y": 0.0
-     },
      {
       "height": 128.0,
       "properties": {
@@ -155,54 +189,12 @@
        "data_type": "double",
        "period": 0.06,
        "show_submit_button": false,
-       "topic": "/SmartDashboard/frc3620/Elevator/Height"
-      },
-      "title": "Height",
-      "type": "Text Display",
-      "width": 256.0,
-      "x": 0.0,
-      "y": 128.0
-     },
-     {
-      "height": 128.0,
-      "properties": {
-       "data_type": "double",
-       "period": 0.06,
-       "show_submit_button": false,
-       "topic": "/SmartDashboard/frc3620/Shoulder/ActualPositionDegrees"
-      },
-      "title": "ActualPositionDegrees",
-      "type": "Text Display",
-      "width": 256.0,
-      "x": 256.0,
-      "y": 128.0
-     },
-     {
-      "height": 128.0,
-      "properties": {
-       "data_type": "double",
-       "period": 0.06,
-       "show_submit_button": false,
        "topic": "/SmartDashboard/frc3620/Shoulder/RequestedPosition"
       },
       "title": "RequestedPosition",
       "type": "Text Display",
       "width": 256.0,
       "x": 256.0,
-      "y": 256.0
-     },
-     {
-      "height": 128.0,
-      "properties": {
-       "data_type": "double",
-       "period": 0.06,
-       "show_submit_button": false,
-       "topic": "/SmartDashboard/frc3620/ESEF/debug/targetHeight"
-      },
-      "title": "targetHeight",
-      "type": "Text Display",
-      "width": 256.0,
-      "x": 0.0,
       "y": 256.0
      },
      {
@@ -230,6 +222,65 @@
       "width": 256.0,
       "x": 512.0,
       "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "boolean",
+       "false_color": 4294198070,
+       "false_icon": "None",
+       "period": 0.06,
+       "topic": "/SmartDashboard/frc3620/EndEffector/HasCoral",
+       "true_color": 4283215696,
+       "true_icon": "None"
+      },
+      "title": "HasCoral",
+      "type": "Boolean Box",
+      "width": 256.0,
+      "x": 256.0,
+      "y": 0.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/Elevator/ActualPosition"
+      },
+      "title": "ActualPosition",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 0.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/Shoulder/ActualPosition"
+      },
+      "title": "ActualPosition",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 256.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/Elevator/RequestedPosition"
+      },
+      "title": "RequestedPosition",
+      "type": "Text Display",
+      "width": 256.0,
+      "x": 0.0,
+      "y": 256.0
      }
     ],
     "layouts": []
@@ -265,6 +316,62 @@
       "type": "Text Display",
       "width": 128.0,
       "x": 640.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/AFI/PivotRequestedPosition"
+      },
+      "title": "PivotRequestedPosition",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 896.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/AFI/measureRollerVelocity"
+      },
+      "title": "measureRollerVelocity",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 896.0,
+      "y": 384.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/AFI/PivotMotorVoltage"
+      },
+      "title": "PivotMotorVoltage",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 1152.0,
+      "y": 128.0
+     },
+     {
+      "height": 128.0,
+      "properties": {
+       "data_type": "double",
+       "period": 0.06,
+       "show_submit_button": false,
+       "topic": "/SmartDashboard/frc3620/AFI/pivotOutput"
+      },
+      "title": "pivotOutput",
+      "type": "Text Display",
+      "width": 128.0,
+      "x": 1280.0,
       "y": 128.0
      }
     ],
